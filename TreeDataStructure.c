@@ -25,7 +25,7 @@ int main()
 	getNumbers();
 	heathMeasure(root);
 	AVLMeasure(root);
-	printf("\t\tAgacin Son Hali\n\n");
+	printf("\t\tThe Final Tree\n\n");
 	printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
 	writeTheTree(root);
 }
@@ -34,8 +34,8 @@ void getNumbers()
 {
 	FILE *fp = fopen("Numbers.txt","r");
 	if(fp==NULL){
-		printf("Dosyayi acma sirasinda bir hata olustu\n");
-		printf("Program kapatiliyor\n");
+		printf("An error occurred while opening the file\n");
+		printf("Closing program\n");
 		exit(1);
 	}
 	while(!feof(fp)){
@@ -44,12 +44,12 @@ void getNumbers()
 		addToTree(a);
 		heathMeasure(root);
 		AVLMeasure(root);
-		printf("\t\tEklendi\n\n");
+		printf("\t\Added\n\n");
 		printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
 		writeTheTree(root);
 		printf("\n\n\n");
 		roamForCorrection(root);
-		printf("\t\tDuzeltildi\n\n");
+		printf("\t\tCoreccted\n\n");
 		printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
 		writeTheTree(root);
 		printf("\n\n------------------------------------------\n\n");
@@ -124,7 +124,7 @@ void heathMeasure(tree *data)
 	}
 }
 
-void AVLMeasure(tree *data)//Agacin her bir elemanýnýn AVL degerini hesaplar
+void AVLMeasure(tree *data)
 {
 	if(data==NULL)
 		return;

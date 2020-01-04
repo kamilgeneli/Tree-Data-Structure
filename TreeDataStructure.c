@@ -26,7 +26,7 @@ int main()
 	heathMeasure(root);
 	AVLMeasure(root);
 	printf("\t\tThe Final Tree\n\n");
-	printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
+	printf("Number\tHealth\tAVL\tLeft\tRight\n");
 	writeTheTree(root);
 }
 
@@ -44,15 +44,15 @@ void getNumbers()
 		addToTree(a);
 		heathMeasure(root);
 		AVLMeasure(root);
-		printf("\t\Added\n\n");
-		printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
+		/*printf("\t\Added\n\n");
+		printf("Number\tHealth\tAVL\tLeft\tRight\n");
 		writeTheTree(root);
-		printf("\n\n\n");
-		roamForCorrection(root);
+		printf("\n\n\n");*/
+		roamForCorrection(root);/*
 		printf("\t\tCoreccted\n\n");
-		printf("Sayi\tHealth\tAVL\tLeft\tRight\n");
+		printf("Number\tHealth\tAVL\tLeft\tRight\n");
 		writeTheTree(root);
-		printf("\n\n------------------------------------------\n\n");
+		printf("\n\n------------------------------------------\n\n");*/
 	}
 }
 

@@ -44,7 +44,7 @@ void getNumbers()
 		addToTree(a);
 		heathMeasure(root);
 		AVLMeasure(root);
-		/*printf("\t\Added\n\n");
+		/*printf("\t\tAdded\n\n");
 		printf("Number\tHealth\tAVL\tLeft\tRight\n");
 		writeTheTree(root);
 		printf("\n\n\n");*/
